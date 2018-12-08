@@ -1,0 +1,16 @@
+body {
+    cursor: default;
+    font-family: 'Comfortaa', cursive;
+}
+
+
+a {
+    color: #e83e8c;
+    text-decoration: none;
+
+    transition: 0.2s ease-out;
+    
+    &:hover {
+        color: #6f42c1;
+    }
+}

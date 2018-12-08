@@ -1,0 +1,14 @@
+.header {
+    &-menu {
+        margin: 0 -15px;
+
+        display: flex;
+        align-items: center;
+
+        list-style: none;
+
+        &-item {
+            margin: 5px 15px;
+        }
+    }
+}

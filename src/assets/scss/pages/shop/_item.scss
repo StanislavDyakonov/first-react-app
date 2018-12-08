@@ -1,0 +1,43 @@
+.shop-list-item {
+    width:100%;
+    height:100%;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: white;
+
+    cursor: pointer;
+
+    &-wrap { 
+        width: calc(100% / 3);
+        padding: 20px;
+    }
+
+    &-border {
+        height: 100%;
+        padding: 2px;
+        
+        background: linear-gradient(-45deg, #e83e8c, #6f42c1);
+    }
+
+    &-image {
+        text-align: center;
+
+        img {
+            max-width:150px;
+        }
+    }
+
+    &-info {
+    }
+
+    &-name {
+        margin-top:10px;
+    }
+
+    &-price {
+        margin-top:10px;
+    }
+}

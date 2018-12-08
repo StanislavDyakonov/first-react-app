@@ -1,15 +1,7 @@
-.header {
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
 
-    &-menu {
-        margin: 0 -15px;
+@import 'normalize';
+@import 'common';
+@import 'pages/module';
+@import 'components/module';
 
-        display: flex;
-        align-items: center;
-
-        list-style: none;
-
-        li {
-            margin: 5px 15px;
-        }
-    }
-}

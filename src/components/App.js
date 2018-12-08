@@ -3,6 +3,7 @@ import {BrowserRouter as Router, Route, Link} from "react-router-dom";
 
 import Home from './pages/Home'
 import Form from './pages/Form'
+import Shop from './pages/Shop'
 
 class App extends Component {
     render() {
@@ -12,14 +13,11 @@ class App extends Component {
                 <div className="container">
                     <Header/>
 
-                    <div className="jumbotron">
-                        <h1>Hello World</h1>
-                    </div>
-
                     <div className="row">
                         <div className="col-12">
                             <Route exact path="/" component={Home}/>
                             <Route path="/form" component={Form}/>
+                            <Route path="/shop" component={Shop}/>
                         </div>
                     </div>
                 </div>
@@ -30,14 +28,17 @@ class App extends Component {
 
 const Header = () => (
     <div className="header">
-        <ul className="header-menu">
-            <li>
+        <div className="header-menu">
+            <div className="header-menu-item">
                 <Link to="/">Home</Link>
-            </li>
-            <li>
+            </div>
+            <div className="header-menu-item">
                 <Link to="/form">Form</Link>
-            </li>
-        </ul>
+            </div>
+            <div className="header-menu-item">
+                <Link to="/shop">Shop</Link>
+            </div>
+        </div>
     </div>
 );
 export default App
